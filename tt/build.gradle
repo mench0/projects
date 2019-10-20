@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'pro'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12';
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '10.0.0-alpha0';
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '10.0.0-alpha0';
+    compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: '10.0.0-alpha0';
+    compile group: 'org.eclipse.jetty', name: 'jetty-api', version: '10.0.0-alpha0';
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.29'
+
+}
